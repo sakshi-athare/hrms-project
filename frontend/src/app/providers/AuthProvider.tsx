@@ -9,7 +9,7 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const init = async () => {
     try {
       const me = await getMe();
-      console.log("ME USER:", me); // 🔍 debug
+      console.log("ME USER:", me); 
       setUser(me);
     } catch (err) {
       console.log("getMe failed", err);
