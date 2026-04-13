@@ -1,0 +1,58 @@
+/* ─── Peoplefy Design Tokens ─────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --font: 'DM Sans', sans-serif;
+
+  --bg:            #f0f2f5;
+  --surface:       #ffffff;
+  --border:        #e5e7eb;
+  --border-focus:  #3B6FF0;
+
+  --accent:        #3B6FF0;
+  --accent-hover:  #2d5edf;
+  --accent-light:  #eef2fd;
+  --accent-muted:  #c7d6fb;
+
+  --text-primary:   #111827;
+  --text-secondary: #6b7280;
+  --text-muted:     #9ca3af;
+
+  --green:        #22c55e;
+  --green-bg:     #dcfce7;
+  --green-text:   #15803d;
+
+  --red:          #ef4444;
+  --red-bg:       #fee2e2;
+  --red-text:     #b91c1c;
+
+  --blue-bg:      #dbeafe;
+  --blue-text:    #1d4ed8;
+
+  --yellow-bg:    #fef9c3;
+  --yellow-text:  #a16207;
+
+  --radius-xs:  4px;
+  --radius-sm:  8px;
+  --radius:     12px;
+  --radius-lg:  16px;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.05);
+  --shadow:    0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.04);
+  --shadow-md: 0 4px 16px rgba(0,0,0,.08);
+  --shadow-lg: 0 10px 32px rgba(0,0,0,.12);
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
